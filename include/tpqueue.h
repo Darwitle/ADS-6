@@ -19,7 +19,7 @@ class TPQueue {
         }
     }
 
-    void vpush(T&& item) {
+    void push(T&& item) {
         T* newItem = new T(std::move(item));
         if (isEmpty()) {
             head = tail = newItem;
